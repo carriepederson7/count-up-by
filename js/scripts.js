@@ -1,9 +1,9 @@
   $(document).ready(function(){
+    var count=0;
     $("#counter").submit(function(event){
       event.preventDefault();
       var counterOutput=[];
-      var count=0;
-      for(var i= 0; i<=30; i+=5){
+      for(var i= 0; i<5; i+=5){
         // counterOutput.push([i]);
         // console.log(counterOutput[i]);
         // console.log(countedNum);
@@ -11,7 +11,7 @@
         count+=5;
         var newNumber = i + counterOutput.push();
         // console.log(count);
-        $("#output").append("<li>" + newNumber + "</li>");
+        $("#output").append("<li>" + count + "</li>");
       };
   });
 });
